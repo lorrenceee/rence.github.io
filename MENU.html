@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale-1">
+<title>Menu</title>
+<link rel="icon" type="image/x-icon" href="Think Thrift Logo.png">
+<!-- css file -->
+<link rel="stylesheet" type="text/css" href="menu.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+<!-- header start -->
+<header>
+	<div class="logo">
+		<img src="Think Thrift Logo.png" alt="Logo">
+	</div>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="check-btn">&#9776;</label>
+		<ul class="navbar">
+			<li><a href="home.html" class="active">Home</a></li>
+			<li><a href="index.html"class="active">About</a></li>
+			<li><a href="menu.html"class="active">Menu</a></li>
+		</ul>
+	</nav>
+	<div class="search-form">
+		<input type="text" placeholder="Search...">
+		<label for="search">&#128269;</label>
+	</div>
+	<!-- Fixed Cart Button -->
+	<div class="cart-icon">
+		<a href="cart.html" title="Shop Cart">🛒</a>
+	</div>
+</header>
+ <!-- header end -->
+
+ <!-- Menu Section -->
+<section class="menu" id="menu">
+    <h1 class="heading">OUR<span>MENU</span></h1>
+    <p class="heading-description"></p>
+
+    <div class="category-text"><h3>Thrift Wardrobe</h3></div>
+
+    <div class="container menu-section">
+        <!-- product 1 -->
+        <div class="card menu-box">
+            <div class="menu-img">
+                <img src="Vintage T.png" alt="Spiderman Graphic T-shirt">
+            </div>
+            <div class="menu-context">
+                <h3>Spiderman Graphic T-shirt</h3>
+                <div onclick="addToCart('Spiderman Graphic T-shirt(Small)', 'P120.00', 'Products/No BG/frappe_mocha.png', 'itemi-s'); return  false;">
+                    <button id="item1-s">Small <span>P120.00</span></button> <!-- SMALL -->
+                </div>
+                <div onclick="addToCart('Spiderman Graphic T-shirt (Medium)', 'P200.00', 'Products/No BG/Vintage T.png', 'item-m'); return false;">
+                    <button id="itemi-m">Medium <span>P200.00</span></button> <!-- MEDIUM-->
+                </div>
+                <div onclick="addToCart('Spiderman Graphic T-shirt (Large)', 'P350.00', 'Vintage T.png', 'itemi-1'); return false;">
+                    <button id="itemi-1">Large <span>P350.00</span></button> <!-- LARGE -->
+                </div>
+            </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="card menu-box">
+            <div class="menu-img">
+                <img src="Jorts.png" alt="Star Boy Wide Leg Jorts">
+            </div>
+            <div class="menu-content">
+                <h3>Star Boy Wide Leg Jorts</h3>
+                <p>These stylish jorts combine the classic look of denim with the comfort of shorts. Perfect for warm weather, they offer a versatile and edgy addition to any wardrobe.</p>
+                <div onclick="addToCart('Star Boy Wide Leg Jorts(Waist 26-27), P90.00', 'Products/No BG/frappe_strawberryvanilla.png', 'item2-s'); return false;">
+                    <button id="item2-s">Small <span>P100.00</span></button>
+                </div>
+                <div onclick="addToCart('Star Boy Wide Leg Jorts (Medium)', 'P150.00', 'Products/No BG/frappe_strawberryvanilla.png', 'item2-m'); return false;">
+                    <button id="item2-m">Medium <span>P150.00</span></button>
+                </div>
+                <div onclick="addToCart('Star Boy Wide Leg Jorts (Large)', 'P200.00', 'Products/No BG/Frappe_strawberryvanilla.png', 'item2-1'); return false;">
+                    <button id="item2-1">Large <span>P200.00</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- product 3 -->
+        <div class="card menu-box">
+            <div class="menu-img">
+                <img src="Cropped polo (2).png" alt="Cropped Polo">
+            </div>
+            <div class="menu-content">
+                <h3>Cropped Polo</h3>
+                <p>A blast of freshness is provided by this delicious combination of strawberries and creamy creaminess.</p>
+                <div onclick="addToCart('Cropped Polo (Small)', 'P90.00', 'Products/No BG/frappe_strawberryvanilla.png', 'item2-s'); return false;">
+                    <button id="item2-s">Small <span>P90.00</span></button>
+                </div>
+                <div onclick="addToCart('Cropped Polo (Medium)', 'P100.00', 'Products/No BG/frappe_strawberryvanilla.png', 'item2-m'); return false;">
+                    <button id="item2-m">Medium <span>P100.00</span></button>
+                </div>
+                <div onclick="addToCart('Cropped Polo (Large)', 'P120.00', 'Products/No BG/frappe_strawberryvanilla.png', 'item2-1'); return false;">
+                    <button id="item2-1">Large <span>P120.00</span></button>
+                </div>
+            </div>
+        </div><br><br><br><br><br>
+
+        <!-- Add more menu items here with the same structure -->
+    </div>
+</section><br><br><br><br>
+
+<footer class="footer">
+    <div class="footer-box">
+        <h3>About Us</h3>
+        <p>We are committed to providing the best service possible.</p>
+    </div>
+    <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="HOME.html">Home</a><br>
+        <a href="ABOUT.html">About</a><br>
+        <a href="MENU.html">Menu</a><br>
+    </div>
+    <div class="footer-box">
+        <h3>For more questions</h3>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Email here</button>
+        </form>
+    </div>
+</footer>
+
+</body>
+</html>
